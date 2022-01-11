@@ -76,8 +76,8 @@ function convert(req,res,next) {
             '-vf scale=-2:640',
             '-threads 8',
             '-codec:a libfdk_aac',
-            '-b:a 128k'
-            
+            '-b:a 128k',
+            '-async 1'
         ];
     }
 
