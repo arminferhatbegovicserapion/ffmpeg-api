@@ -71,6 +71,7 @@ function convert(req,res,next) {
             '-crf 23',
             '-preset ultrafast',
             '-b:v 500k',
+            '--enable-demuxer=mov',
             '-maxrate 500k',
             '-bufsize 1000k',
             '-vf scale=-2:640',
