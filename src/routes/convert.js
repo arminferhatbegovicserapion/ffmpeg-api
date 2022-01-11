@@ -73,6 +73,7 @@ function convert(req,res,next) {
             '-b:v 500k',
             '-maxrate 500k',
             '-bufsize 1000k',
+             '--no-delay',
             '-vf scale=-2:640',
             '-threads 8',
             '-codec:a libfdk_aac',
